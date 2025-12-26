@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penalty Master 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stadium">
+        <div id="ui-top">
+            <div id="score-board">ГОЛИ: <span id="score">0</span></div>
+            <div id="attempts-bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        
+        <div id="goal">
+            <div id="net"></div>
+            <div id="goalkeeper">
+                <div id="gk-head"></div>
+                <div id="gk-body"></div>
+                <div id="gk-hands"></div>
+            </div>
+        </div>
+
+        <div id="ball"></div>
+
+        <div id="controls">
+            <button onclick="shoot('left')">ВЛІВО</button>
+            <button onclick="shoot('center')">ЦЕНТР</button>
+            <button onclick="shoot('right')">ВПРАВО</button>
+        </div>
+
+        <div id="message">СЕРІЯ ПЕНАЛЬТІ: УДАР 1</div>
+        
+        <div id="overlay" style="display:none">
+            <h1 id="final-result">КІНЕЦЬ ГРИ</h1>
+            <button onclick="location.reload()">ЗІГРАТИ ЩЕ РАЗ</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
